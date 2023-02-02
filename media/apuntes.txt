@@ -1,0 +1,18 @@
+Margin 
+    Crea espacio entre los elementos html en todas las direcciones
+
+Ejemplos:
+p{
+    margin-top: x
+    margin-right: x
+    margin-bootom: x
+    margin-left: x
+}
+
+p{
+    margin: x x x x;
+}
+
+
+Padding
+    Crea un espacio al rededor de un elemento dentro del propio elemento

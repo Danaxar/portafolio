@@ -1,0 +1,9 @@
+Inicio
+Acerca de mi
+Habilidades
+Proyectos
+Contacto
+
+# Funcionalidades
+Botón dark-light mode
+Botón inglés-español

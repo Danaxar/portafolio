@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+}
+
+section{
+    margin: auto;
+}
+
+
+
+/* Barra de progreso */
+.progress-bar{
+    position: fixed;
+    width: 100%;
+    height: 10px;
+}
+
+.progress{
+    width: 0%;
+    height: 100%;
+    background-color: #00E4B6;
+}
+
+/* Header */
+nav{
+    background-color: transparent;
+    margin: 1rem;
+    
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 10vw;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    transition: 1s;
+}
+
+li a:hover{
+    color: #83f170;
+    transition: 0.2s;
+}
+
+/* General */
+button{
+    font-size: 1.4rem;
+    border-radius: 30px 30px 30px 30px;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-style: solid;
+    background-color: white;
+    color:black;
+    border-color: transparent;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #00E4B6;
+    transition: 0.4s;
+    transform: skew(5deg, -5deg);
+}
+
+video{
+    /* Fijar el video en la pantalla */
+    position: fixed;
+
+    /* Tamaños minimos */
+    min-width: 100%;
+    min-height: 100%;
+
+    /* Centrar el video */
+
+    top: 50%;
+    left: 50%;
+
+    transform: translateX(-50%) translateY(-50%);
+
+    z-index: -1;
+
+    filter: blur(10px);
+}
+
+
+/* Secciones de la página */
+/*  Presentacion */
+#presentacion{
+    height: 50rem;
+    color: white;
+}
+
+#textoPresentacion{
+    padding: 10%;
+    font-size: xx-large;
+    
+}
+
+#textoSaludo{
+    color: #d4f872;
+}
+
+.text-color{
+    background-image: linear-gradient(to right, #3494e6, #d4f872);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#botonesPresentacion{
+    margin-top: 1rem;
+}
+
+
+
+/* Acerca de mi */
+#sobreMi{
+    color:white;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+#sobreMi a{
+    text-decoration: none;
+    color: #f45b69;
+}
+
+#sobreMi p{
+    font-size: x-large;
+    text-align: justify;
+}
+
+#habilidades h2, #sobreMi h1{
+    font-size: 3vw;
+    text-align: center;
+}
+
+
+/* Habilidades */
+#habilidades{
+    color:white;
+}
+
+ul.icons li img{
+    width: 7rem;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    width: 70%;
+    margin: auto;
+    border-radius: 30px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.itemList{
+    padding: 4%;
+}
+
+.itemList ul{
+    list-style: none;
+}
+
+
+/*  Habilidades */
+ul.icons li img:hover{
+    transform: scale(110%);
+    transition: 0.3s;
+}
+
+ul.icons li{
+    margin-bottom: 10%;
+}
+
+/* Separaciones */
+.spacer{
+    width: 100%;
+    aspect-ratio: 1280/300;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.layer1{
+    background-image: url("./media/sep.svg");
+}
