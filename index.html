@@ -18,11 +18,11 @@
 
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#sobreMi">Acerca de mi</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Inicio 😺</a></li>
+                <li><a href="#sobreMi">Acerca de mi 👨🏻‍💻</a></li>
+                <li><a href="#habilidades">Habilidades 🎯</a></li>
+                <li><a href="#">Proyectos 🖥️</a></li>
+                <li><a href="#">Contacto 📩</a></li>
             </ul>
         </nav>
     </header>
@@ -32,38 +32,45 @@
 
             <div id="textoPresentacion">
                 <div id="textoSaludo">
-                    ¡Hola!
+                    ¡Hola! 👋🏻
                 </div>
                 <h1>Soy <span class="text-color">Daniel Catalán </span> </h1>
-                <p>Desarrollador de software full stack </p>
+                <p>Ingeniero de software </p>
                 <div id="botonesPresentacion">
-                    <button>Seguir leyendo</button>
-                    <button>Descargar CV</button>
+                    <a href="#sobreMi"><button>Seguir leyendo 📖</button></a>
+                    <!-- <button>Descargar CV ⬇️</button> -->
                 </div>
 
             </div>
         </div>
         <section id="sobreMi">
             <br><br><br>
-            <h1>Acerca de mi</h1>
-            <p>Tengo
-                <script>
-                    const fechaNac = 2001;
-                    const today = new Date();
-                    document.write(today.getFullYear() - fechaNac)
-                </script>
-                años y soy estudiante de la <a href="https://usach.cl/">Universidad de Santiago de Chile</a>
-                Actualmente me dedico a desarrollar sistemas de diversa índole ya sea
-                frontend o backend, inclusive scripts de automatización. Pero eventualmente en un futuro
-                me gustaría dedicarme a la inteligencia artificial y a la ciencia de datos ya
-                que me apasiona la información, los algoritmos y cálculos. Sin embargo
-                mi formación académica me permite hoy en día contar con las habilidades para
-                desenvolverme en cualquier ámbito. Es por eso que en la siguiente sección presento
-                las habilidades que manejo como full stack.
-            </p>
+            <h1>Acerca de mi 👨🏻‍💻</h1>
+            <br><br>
+            <div class="flexboxEffect">
+                <div>
+                    <img src="./media/Foto1.jpeg">
+                </div>
+                <div id="textSobreMi" class="fondoBlur">
+                    <p>Tengo
+                        <script>
+                            const fechaNac = 2001;
+                            const today = new Date();
+                            document.write(today.getFullYear() - fechaNac)
+                        </script>
+                        años y soy estudiante de Ingeniería en Informática en la <a href="https://usach.cl/">Universidad
+                            de
+                            Santiago de Chile</a>.<br>
+                        Mi formación académica me permite hoy en día contar con las habilidades full stack por lo que
+                        puedo
+                        desenvolverme en cualquier ámbito. Soy autodidacta y amante de la disciplina 🌱
+                    </p>
+                </div>
+            </div>
         </section>
         <section id="habilidades">
-            <h2>Habilidades</h2>
+            <h2>Habilidades 🎯</h2>
+            <br><br><br>
             <div class="flexbox">
                 <div class="itemList">
                     <h3>Lenguajes</h3>
@@ -79,6 +86,9 @@
                         <li>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
                         </li>
+                        <li><img src="https://camo.githubusercontent.com/4b9229e3a1daaa9a65752440f6673804556cbaa46e22d6955c2ba0e3ccb36b46/687474703a2f2f7261636b65742d6c616e672e6f72672f696d672f7261636b65742d6c6f676f2e737667"
+                                alt=""></li>
+                        <li><img src="https://plugins.jetbrains.com/files/13954/279571/icon/pluginIcon.png" alt=""></li>
 
                     </ul>
                 </div>
@@ -102,6 +112,8 @@
                         <li>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
                         </li>
+                        <li><img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt=""></li>
+
                     </ul>
                 </div>
                 <div class="itemList">
@@ -111,16 +123,9 @@
                             <img
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
                         </li>
-
-
-
-
-
                         <li>
-
                             <img
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
-
                         </li>
                         <li>
                             <img
@@ -132,9 +137,6 @@
                         <li>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
                         </li>
-
-
-
                     </ul>
 
                 </div>
@@ -188,11 +190,38 @@
             </div>
 
         </section>
-
-
-
+        <section id="proyectos">
+            <h1>Proyectos 🖥️</h1>
+            <div class="flexbox">
+                <div class="card">
+                    <h2>Ecomerce pizzería</h2>
+                    <img src="./media/ecomerce-pizzeria.png">
+                    <p>
+                        Ecomerce de una pizzería ficticia desarroado en react.js
+                    </p>
+                </div>
+                <div class="card">
+                    <h2>Microservicios calculo sueldos</h2>
+                    <img src="./media/pep2.png">
+                    <p>Sistema Administrativo Informático que calcula los sueldos de trabajadores. Montada en una
+                        arquitectura orientada a microservicios
+                    </p>
+                    <!-- imagen -->
+                </div>
+                <div class="card">
+                    <h2>Monolito calculo sueldos</h2>
+                    <img src="./media/pep1.png">
+                    <p>Sistema Administrativo Informático que calcula los sueldos de trabajadores. Montada como monolito
+                        en
+                        springboot</p>
+                    <!-- imagen -->
+                </div>
+            </div>
+        </section>
 
     </main>
-    <footer></footer>
+    <footer>
+
+    </footer>
 
 </body>

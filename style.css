@@ -17,10 +17,6 @@ body{
     background-color: black;
 }
 
-section{
-    margin: auto;
-}
-
 
 
 /* Barra de progreso */
@@ -53,7 +49,7 @@ nav ul{
 li a{
     text-decoration: none;
     color: white;
-    font-size: x-large;
+    font-size: 1.5vw;
     transition: 1s;
 }
 
@@ -120,7 +116,8 @@ video{
 }
 
 .text-color{
-    background-image: linear-gradient(to right, #3494e6, #d4f872);
+    /* background-image: linear-gradient(to right, #3494e6, #d4f872); */
+    background-image: linear-gradient(to right, #00E4B6, #d4f872);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -135,7 +132,6 @@ video{
 /* Acerca de mi */
 #sobreMi{
     color:white;
-    width: 50%;
     text-align: center;
     margin-bottom: 10%;
 }
@@ -150,11 +146,16 @@ video{
     text-align: justify;
 }
 
-#habilidades h2, #sobreMi h1{
-    font-size: 3vw;
-    text-align: center;
+
+
+#sobreMi img{
+    width: 30rem;
+    border-radius: 50%;
 }
 
+#sobreMi div{
+    margin-right: 10%;
+}
 
 /* Habilidades */
 #habilidades{
@@ -196,6 +197,31 @@ ul.icons li{
     margin-bottom: 10%;
 }
 
+/* Proyectos */
+#proyectos{
+    color: white;
+}
+
+.card{
+    margin: auto;
+    width: 25rem;
+    border-radius: 30px 30px;
+}
+
+.card h2{
+    text-align: center;
+}
+
+.card img{
+    width: 100%;
+}
+
+
+#habilidades h2, #sobreMi h1, #proyectos h1{
+    font-size: 3vw;
+    text-align: center;
+}
+
 /* Separaciones */
 .spacer{
     width: 100%;
@@ -204,6 +230,12 @@ ul.icons li{
     background-size: cover;
 }
 
-.layer1{
-    background-image: url("./media/sep.svg");
+/* Efectos */
+.flexboxEffect{
+    display:flex;
+}
+
+.fondoBlur{
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
 }
