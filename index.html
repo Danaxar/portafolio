@@ -10,18 +10,13 @@
 </head>
 
 <body>
-    <div class="progress-bar">
-        <!-- El div que se va a ir estirando -->
-        <div class="progress" id="barra"></div>
-    </div>
     <header>
-
         <nav>
             <ul>
                 <li><a href="#">Inicio 😺</a></li>
                 <li><a href="#sobreMi">Acerca de mi 👨🏻‍💻</a></li>
                 <li><a href="#habilidades">Habilidades 🎯</a></li>
-                <li><a href="#">Proyectos 🖥️</a></li>
+                <li><a href="#proyectos">Proyectos 🖥️</a></li>
                 <li><a href="#">Contacto 📩</a></li>
             </ul>
         </nav>
@@ -29,12 +24,9 @@
     <main>
         <video src="./media/video4.mp4" autoplay muted loop></video>
         <div id="presentacion">
-
             <div id="textoPresentacion">
-                <div id="textoSaludo">
-                    ¡Hola! 👋🏻
-                </div>
-                <h1>Soy <span class="text-color">Daniel Catalán </span> </h1>
+                <div id="textoSaludo">¡Hola! 👋🏻</div>
+                <h1>Soy <span class="text-color">Daniel Catalán</span></h1>
                 <p>Ingeniero de software </p>
                 <div id="botonesPresentacion">
                     <a href="#sobreMi"><button>Seguir leyendo 📖</button></a>
@@ -43,35 +35,43 @@
 
             </div>
         </div>
+        <!-- Rojo -->
         <section id="sobreMi">
             <br><br><br>
-            <h1>Acerca de mi 👨🏻‍💻</h1>
-            <br><br>
-            <div class="flexboxEffect">
-                <div>
+            <h1>Acerca de mi 👨🏻‍💻</h1><br><br>
+
+            <!-- Rosado -->
+            <div id="sobreMiContent">
+
+                <!-- Azul -->
+                <div id="sobreMiFoto">
                     <img src="./media/Foto1.jpeg">
                 </div>
-                <div id="textSobreMi" class="fondoBlur">
+
+                <!-- Verde -->
+                <div id="textSobreMi" class="fondoBlur curvedRadius">
                     <p>Tengo
                         <script>
                             const fechaNac = 2001;
                             const today = new Date();
                             document.write(today.getFullYear() - fechaNac)
                         </script>
-                        años y soy estudiante de Ingeniería en Informática en la <a href="https://usach.cl/">Universidad
-                            de
-                            Santiago de Chile</a>.<br>
-                        Mi formación académica me permite hoy en día contar con las habilidades full stack por lo que
+                        años y actualmente soy estudiante de Ingeniería en Informática en la
+                        Universidad de Santiago de Chile 🎓<br><br>
+                        Mi formación académica me permite hoy en día contar con habilidades full stack por lo que
                         puedo
-                        desenvolverme en cualquier ámbito. Soy autodidacta y amante de la disciplina 🌱
+                        desenvolverme en cualquier ámbito. <br><br>
+                        Soy autodidacta y amante de la disciplina 🌱
                     </p>
+                    <a href="#habilidades"><button>Seguir leyendo 📖</button></a>
                 </div>
+
             </div>
         </section>
         <section id="habilidades">
             <h2>Habilidades 🎯</h2>
             <br><br><br>
-            <div class="flexbox">
+            <div class="pizarra">
                 <div class="itemList">
                     <h3>Lenguajes</h3>
                     <ul class="icons">
@@ -190,14 +190,24 @@
             </div>
 
         </section>
+        <br><br><br>
         <section id="proyectos">
             <h1>Proyectos 🖥️</h1>
+            <br><br>
             <div class="flexbox">
+                <div class="card">
+                    <h2>Be productive</h2>
+                    <img src="./media/be-productive.png">
+                    <p>
+                        Sistema que te ayuda a mantenerte enfocado cerrando aplicaciones y otorgando un espacio de
+                        estudio
+                    </p>
+                </div>
                 <div class="card">
                     <h2>Ecomerce pizzería</h2>
                     <img src="./media/ecomerce-pizzeria.png">
                     <p>
-                        Ecomerce de una pizzería ficticia desarroado en react.js
+                        Ecomerce de una pizzería ficticia desarrollado en react.js
                     </p>
                 </div>
                 <div class="card">
@@ -221,7 +231,52 @@
 
     </main>
     <footer>
-
+        <div class="flexbox">
+            <div class="footerSection">
+                <ul>
+                    <li><span class="text-color">Daniel Catalán</span> </li>
+                    <li>Ingeniero de software</li>
+                </ul>
+            </div>
+            <div class="footerSection">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/daniel-catalan-valenzuela-953056257/" target="_blank"><img
+                                src="https://cdn-icons-png.flaticon.com/512/145/145807.png">
+                            <p> LinkedIn </p>
+                        </a>
+                    </li>
+                    <li><a href="https://www.instagram.com/danaxarcodes/" target="_blank"><img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png">
+                            <p>Instagram</p>
+                        </a>
+                    </li>
+                    <li><a href="https://github.com/Danaxar" target="_blank"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBIxtAFjV-iTPm3DNMxVIFQVLdvHrwuEGrRQ&usqp=CAU"
+                                alt="">
+                            <p>Github</p>
+                        </a>
+                    </li>
+                    <li><a target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3670/3670157.png">
+                            <p>Discord: Danaxar#9055</p>
+                        </a>
+                    </li>
+                    <li><a target="_blank"><img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png"
+                                alt="">
+                            <p>whatsapp: +56939452840</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footerSection">
+                <ul>
+                    <li><a href="https://usach.cl/" target="_blank">Universidad de Santiago de Chile 🏛️</a></li>
+                    <li><a href="https://admision.usach.cl/ingenieria/ingenieria-de-ejecucion-en-computacion-e-informatica"
+                            target="_blank">Mi
+                            carrera 🎓</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
 </body>

@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-
-
 * {
     padding: 0;
     margin: 0;
@@ -15,21 +13,6 @@ html{
 
 body{
     background-color: black;
-}
-
-
-
-/* Barra de progreso */
-.progress-bar{
-    position: fixed;
-    width: 100%;
-    height: 10px;
-}
-
-.progress{
-    width: 0%;
-    height: 100%;
-    background-color: #00E4B6;
 }
 
 /* Header */
@@ -75,6 +58,7 @@ button:hover{
     background-color: #00E4B6;
     transition: 0.4s;
     transform: skew(5deg, -5deg);
+    color:white;
 }
 
 video{
@@ -86,15 +70,11 @@ video{
     min-height: 100%;
 
     /* Centrar el video */
-
     top: 50%;
     left: 50%;
-
     transform: translateX(-50%) translateY(-50%);
-
     z-index: -1;
-
-    filter: blur(10px);
+    filter: blur(30px);
 }
 
 
@@ -132,29 +112,34 @@ video{
 /* Acerca de mi */
 #sobreMi{
     color:white;
-    text-align: center;
     margin-bottom: 10%;
 }
 
-#sobreMi a{
-    text-decoration: none;
-    color: #f45b69;
+#sobreMiContent{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-#sobreMi p{
-    font-size: x-large;
-    text-align: justify;
-}
-
-
-
-#sobreMi img{
-    width: 30rem;
+#sobreMiFoto img{
+    width: 20vw;
     border-radius: 50%;
 }
 
-#sobreMi div{
-    margin-right: 10%;
+#textSobreMi{
+    width: 50vw;
+}
+
+#textSobreMi p{
+    text-align: justify;
+    font-size: 1vw;
+}
+
+#sobreMi button{
+    margin-left: 25%;
+    margin-top: 2rem;
+    width: 15vw;
+    font-size: 1vw;
 }
 
 /* Habilidades */
@@ -163,15 +148,15 @@ video{
 }
 
 ul.icons li img{
-    width: 7rem;
+    width: 4vw;
 }
 
-.flexbox{
+.pizarra{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: nowrap;
     background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(40px);
+    backdrop-filter: blur(50px);
     width: 70%;
     margin: auto;
     border-radius: 30px 30px;
@@ -186,8 +171,6 @@ ul.icons li img{
     list-style: none;
 }
 
-
-/*  Habilidades */
 ul.icons li img:hover{
     transform: scale(110%);
     transition: 0.3s;
@@ -206,10 +189,14 @@ ul.icons li{
     margin: auto;
     width: 25rem;
     border-radius: 30px 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    padding: 1rem;
 }
 
 .card h2{
     text-align: center;
+    margin: 1rem;
 }
 
 .card img{
@@ -222,6 +209,39 @@ ul.icons li{
     text-align: center;
 }
 
+/* Footer */
+footer{
+    margin-top: 10%;
+    background-color: black;
+    height: 250px;
+    color: white;
+}
+
+footer > div{
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerSection ul{
+    list-style: none;
+}
+
+.footerSection ul li a{
+    display: flex;
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+}
+
+.footerSection ul li img{
+    margin-right: 2rem;
+}
+
+.footerSection ul li img{
+    width: 25px;
+    height: 25px;
+}
+
 /* Separaciones */
 .spacer{
     width: 100%;
@@ -231,11 +251,16 @@ ul.icons li{
 }
 
 /* Efectos */
-.flexboxEffect{
+.flexbox{
     display:flex;
 }
 
 .fondoBlur{
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(40px);
+}
+
+.curvedRadius{
+    border-radius: 30px 30px;
+    padding: 1rem;
 }
